@@ -21,16 +21,16 @@ a {
 
 .hero,
 .page-hero {
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height : 100vh;
+  background-size : cover;
+  background-position : center;
+  display : flex;
+  flex-direction : column;
+  justify-content : space-between;
 }
 
 .hero {
-  background-image:
+  background-image :
     linear-gradient(rgba(8, 18, 30, 0.6), rgba(8, 18, 30, 0.7)),
     url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80");
 }
@@ -53,55 +53,56 @@ a {
     url("https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&q=80");
 }
 
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 8%;
+  display: flex ;
+  justify-content : space-between ;
+  align-items : center ;
+  padding : 24px 8%;
 }
 
 .navbar.dark .logo,
 .navbar.dark .nav-links a {
-  color: #fff;
+  color : #fff;
 }
 .logo {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 0.5px;
+  font-size : 1.4rem;
+  font-weight : 800;
+  color : #fff;
+  letter-spacing : 0.5px;
 }
 
 .nav-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display : flex;
+  gap : 20px;
+  flex-wrap : wrap;
 }
 
 .nav-links a {
-  color: #fff;
-  font-weight: 600;
-  opacity: 0.95;
+  color : #fff;
+  font-weight : 600;
+  opacity : 0.95;
 }
 
 .nav-links a:hover {
-  opacity: 1;
-  text-decoration: underline;
+  opacity : 1;
+  text-decoration : underline;
 }
 
 .hero-content,
 .page-hero-content {
-  padding: 0 8% 80px;
-  max-width: 820px;
-  color: #fff;
+  padding : 0 8% 80px;
+  max-width : 820px;
+  color : #fff;
 }
 
 .badge {
-  display: inline-block;
-  background: rgba(127, 231, 220, 0.18);
-  border: 1px solid rgba(127, 231, 220, 0.45);
-  color: #c8fff7;
-  padding: 8px 14px;
-  border-radius: 999px;
+  display : inline-block;
+  background : rgba(127, 231, 220, 0.18);
+  border : 1px solid rgba(127, 231, 220, 0.45);
+  color : #c8fff7;
+  padding : 8px 14px;
+  border-radius : 999px;
   font-size : 0.9rem;
   margin-bottom : 18px;
 }
@@ -184,10 +185,10 @@ a {
 .question-card,
 .sport-card,
 .step {
-  background: #fff;
-  border-radius: 22px;
-  padding : 24px;
-  box-shadow : 0 10px 30px rgba(13, 40, 53, 0.08);
+  background : #fff;
+  border-radius : 22px;
+  padding  : 24px;
+  box-shadow  : 0 10px 30px rgba(13, 40, 53, 0.08);
   border : 1px solid rgba(16, 33, 43, 0.06);
 }
 
@@ -238,6 +239,34 @@ a {
   color: #d8e7ee;
   text-align : center;
   padding : 34px 8%;
+}
+.footer h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer a {
+  color: #7fe7dc;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-content,
+  .page-hero-content {
+    padding-bottom: 60px;
+  }
+
+  .section {
+    padding: 64px 6%;
+  }
 }
 
 
